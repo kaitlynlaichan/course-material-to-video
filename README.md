@@ -3,14 +3,14 @@
 Match course notes to the YouTube videos (and the exact minutes) that teach them,
 so you can self-learn a course without hunting through YouTube.
 
-**Status: layers 1–2 of 4 built.**
+**Status: layers 1–3 built; layer 3 tested on one section.**
 
 | Layer | What it does | Status |
 |---|---|---|
 | 1. Fetch | YouTube search, video facts (views, likes, length), timestamped transcripts, local cache | ✅ |
 | 2. Interface | MCP server so any Claude app can call layer 1 | ✅ |
-| 3. Judgment | Claude picks the fewest videos that cover each section with no gaps | next |
-| 4. Output | A per-section video map (watch → read notes → do the pset) | later |
+| 3. Judgment | Rules (a Claude skill, `skill/SKILL.md`) for picking the fewest videos that, with the notes, explain every concept in a section | ✅ draft |
+| 4. Output | A per-section video map: the picture → the full idea → read the notes → check your understanding | ✅ draft |
 
 ## Repo layout
 
@@ -20,6 +20,7 @@ cmv/                 the Python package (cmv = course material → video)
   server.py          layer 2: MCP server exposing layer 1 as tools
   safety.py          cleans/fences text written by strangers before Claude sees it
 tests/               offline tests: no network, no key
+skill/SKILL.md       layer 3: the rules Claude follows to build a video map
 scripts/live_check.py  starts the server like a Claude app does and calls every tool
 cache/               saved API results and transcripts (not committed)
 .env                 your YouTube API key (not committed)
