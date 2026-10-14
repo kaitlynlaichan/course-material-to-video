@@ -67,14 +67,12 @@ Choose the **smallest set of clips that covers every concept**, in this order:
    seconds early. **If the clip uses a term the video defines earlier, start
    where it is defined** (tested: starting 51 s in skipped the definition of
    "homogeneous system" and lost the student).
-5. **Use the notes' notation, show why.** Prefer clips that use the notation
-   the notes have introduced *so far* and that show *why* (a picture or a
-   worked reason) over clips that state the theorem. If the best clip uses
-   notation the course hasn't introduced yet (e.g. Ax = b, "null space", x_p
-   while the notes still use [A | b]), translate it in one line right next to
-   the clip. (Tested: a student understood a visual explanation start to
-   finish, but couldn't follow a lecture stating the same theorem in
-   unfamiliar notation.)
+5. **Show why, in any notation.** Prefer clips that *show why* (a picture,
+   a worked reason) over clips that only state the theorem. Never filter by
+   notation: a great explanation in different symbols beats a weak one in the
+   notes' symbols. Different notation is handled by the bridge (see Output).
+   (Tested: a student understood a visual explanation start to finish, but
+   couldn't follow a lecture that stated the same theorem.)
 6. Whatever no picked clip explains goes in the notes flag.
 
 ## 5. Output
@@ -84,14 +82,25 @@ Exactly this, in plain words, in the notes' order:
 ```
 §<number> <title>   (≈<total minutes> min of video)
 
-| Concepts | Video | Watch |
-|---|---|---|
-| <plain-language concepts this clip explains> | <channel>, <short title> | [<start>–<end>](<link opening at start>) |
+| Concepts | Video | Watch | Bridge |
+|---|---|---|---|
+| <plain-language concepts this clip explains> | <channel>, <short title> | [<start>–<end>](<link opening at start>) | <see below> |
 
 📖 Videos don't cover these, so read them in the notes:
 - <Example/Definition/Theorem number>: <what it is, in plain words>
-
-Notes: <only if needed: a video uses different words or a different
-definition than the notes, e.g. Strang's "pivots" = the notes' "leading
-entries">
 ```
+
+**The bridge** is Claude's own short explanation that connects the clip to the
+notes, in plain words. Write one only when it's needed:
+
+- **Translate:** the video's terms or notation → the notes' (e.g. "Strang's
+  'null space' = all solutions of the associated homogeneous system, Def 2.4.3";
+  "Ax = b is just the system [A | b] written as one equation").
+- **Fill a small gap:** a step or reason the clip skips, in 1–2 sentences.
+- **Connect:** how the clip's idea becomes the notes' theorem (e.g. "this
+  picture is Theorem 2.4.4").
+
+Every bridge cites the notes' definition/theorem/example number it relies on, so
+the student can check it. Bridges are not checked against a video, so keep them
+short and stick to what the notes say. Anything bigger than a bridge belongs in
+📖.
