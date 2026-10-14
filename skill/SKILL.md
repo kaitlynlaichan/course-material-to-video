@@ -64,9 +64,18 @@ Choose the **smallest set of clips that covers every concept**, in this order:
    lists steps. A recipe is fine as a worked example.
 4. A clip beats a whole video: only the minutes that match the section.
    Start at a natural break ("Now let's look at…", a chapter marker), a few
-   seconds early, and say if the clip assumes something from earlier in the
-   video.
-5. Whatever no picked clip explains goes in the notes flag.
+   seconds early. **If the clip uses a term the video defines earlier, start
+   where it is defined** (tested: starting 51 s in skipped the definition of
+   "homogeneous system" and lost the student).
+5. **Use the notes' notation, show why.** Prefer clips that use the notation
+   the notes have introduced *so far* and that show *why* (a picture or a
+   worked reason) over clips that state the theorem. If the best clip uses
+   notation the course hasn't introduced yet (e.g. Ax = b, "null space", x_p
+   while the notes still use [A | b]), translate it in one line right next to
+   the clip. (Tested: a student understood a visual explanation start to
+   finish, but couldn't follow a lecture stating the same theorem in
+   unfamiliar notation.)
+6. Whatever no picked clip explains goes in the notes flag.
 
 ## 5. Output
 
