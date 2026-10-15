@@ -62,11 +62,14 @@ Choose the **smallest set of clips that covers every concept**, in this order:
 2. Fewest clips: one clip covering four concepts beats four clips.
 3. Explanation beats recipe: a clip that shows *why* beats one that only
    lists steps. A recipe is fine as a worked example.
-4. A clip beats a whole video: only the minutes that match the section.
-   Start at a natural break ("Now let's look at…", a chapter marker), a few
-   seconds early. **If the clip uses a term the video defines earlier, start
-   where it is defined** (tested: starting 51 s in skipped the definition of
-   "homogeneous system" and lost the student).
+4. A clip beats a whole video: only the minutes that match the section. Use
+   judgment about where to start. Start at the **beginning of the video's
+   segment on that idea**, such as the start of the topic or the worked problem
+   that builds up to the theorem, not at the moment the theorem is stated.
+   (Tested: Strang shows Theorem 2.4.4 *through* a problem; starting at the
+   statement skipped the build-up. A topic's opening definition was skipped
+   too when a clip started 51 s in.) If the segment relies on an example set up
+   earlier in the video, say where in the bridge ("the matrix is at 0:52").
 5. **Show why, in any notation.** Prefer clips that *show why* (a picture,
    a worked reason) over clips that only state the theorem. Never filter by
    notation: a great explanation in different symbols beats a weak one in the
