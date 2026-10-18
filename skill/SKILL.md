@@ -83,6 +83,9 @@ Choose the **smallest set of clips that covers every concept**, in this order:
 Exactly this, in plain words, in the notes' order:
 
 ```
+💡 Big idea: <2–4 lines: the one idea that ties the section together, and
+   how it connects to earlier sections>
+
 §<number> <title>   (≈<total minutes> min of video)
 
 | Concepts | Video | Watch | Bridge |
@@ -92,6 +95,13 @@ Exactly this, in plain words, in the notes' order:
 📖 Videos don't cover these, so read them in the notes:
 - <Example/Definition/Theorem number>: <what it is, in plain words>
 ```
+
+**The big idea** goes first. Name the single idea every concept in the
+section follows from, in plain words, and say which earlier sections it builds
+on (e.g. "Ax = b can be read as a system, as columns, or as a picture;
+Theorem 3.3.9 says they agree"). Keep it to what the notes support. If the
+section is mostly definitions with no single unifying idea, say so in one line.
+(Tested: the student found the big-idea summary the most helpful part of a map.)
 
 **The bridge** is Claude's own short explanation that connects the clip to the
 notes, in plain words. Write one only when it's needed:
