@@ -72,6 +72,10 @@ cache/               saved API results and transcripts (not committed)
 
 ## Setup
 
+Needs Python 3.10 to 3.14 (tested on 3.11, 3.12 and 3.14). Python 3.15 won't work yet
+because `youtube-transcript-api` doesn't support it. If `python3 --version` shows 3.15,
+use a specific version instead, such as `python3.14`.
+
 ```
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 cp .env.example .env    # then paste your YouTube Data API v3 key into .env
