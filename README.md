@@ -86,6 +86,9 @@ cp .env.example .env    # then paste your YouTube Data API v3 key into .env
 Transcripts need no key. Search and video facts do (free key, 10,000 units a day;
 one search costs 101, so about 95 searches a day). Everything is cached in `cache/`.
 
+Transcripts use the unofficial `youtube-transcript-api` library, which can stop working
+if YouTube changes something or blocks requests.
+
 To use it in Claude Desktop, add this to `claude_desktop_config.json`, with your own
 path to this folder, and add `skill/SKILL.md` to your Claude app as a skill:
 
